@@ -13,10 +13,10 @@ export function RightSideBar() {
       className={stack({
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "#B5B5B5",
-        padding: "2rem",
+        bg: "#B5B5B5",
+        p: "2rem",
         color: "#222",
-        width: "20em",
+        w: "20em",
       })}
     >
       <div>
