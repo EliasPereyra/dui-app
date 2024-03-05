@@ -1,7 +1,7 @@
 export function Playground({
   canvasRef,
 }: {
-  canvasRef: React.MutableRefObject<HTMLCanvasElement>;
+  canvasRef: React.MutableRefObject<HTMLCanvasElement | null>;
 }) {
   return (
     <section>
