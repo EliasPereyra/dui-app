@@ -4,7 +4,7 @@ const styles = css({
   color: "#222",
   padding: "2rem",
   minWidth: "10em",
-  backgroundColor: "#B5B5B5",
+  backgroundColor: "#CDCCCC",
   height: "100vh",
 });
 
