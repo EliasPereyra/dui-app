@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { circle, stack } from "../../styled-system/patterns";
+import { ProfilePic } from "./atoms/ProfilePic";
+import { ShapesMenu } from "./ShapesMenu";
 
 export function Navbar() {
   return (
@@ -9,6 +11,7 @@ export function Navbar() {
         justifyContent: "space-between",
         alignItems: "center",
         bg: "linear-gradient(to right, #131417 0%, #06080C 100%)",
+        padding: "",
       })}
     >
       <div className={circle({ overflow: "hidden" })}>
@@ -20,9 +23,11 @@ export function Navbar() {
         />
       </div>
       <div id="tools">
-        <div>1</div>
+        <ShapesMenu />
       </div>
-      <div id="users"></div>
+      <div id="users">
+        <ProfilePic name="elias" />
+      </div>
     </nav>
   );
 }
