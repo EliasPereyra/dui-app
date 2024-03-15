@@ -2,8 +2,8 @@ import { css } from "../../styled-system/css";
 
 const styles = css({
   color: "#222",
-  padding: "2rem",
-  minWidth: "10em",
+  padding: "2",
+  minWidth: "12em",
   backgroundColor: "#CDCCCC",
   height: "100vh",
 });
