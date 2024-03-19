@@ -11,7 +11,7 @@ export function Navbar() {
         justifyContent: "space-between",
         alignItems: "center",
         bg: "linear-gradient(to right, #131417 0%, #06080C 100%)",
-        padding: "",
+        p: "1",
       })}
     >
       <div className={circle({ overflow: "hidden" })}>
