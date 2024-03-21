@@ -2,7 +2,7 @@ import { css } from "../../styled-system/css";
 
 const styles = css({
   color: "#222",
-  padding: "2",
+  p: "2",
   minWidth: "12em",
   backgroundColor: "#CDCCCC",
   height: "100vh",
