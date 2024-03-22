@@ -14,7 +14,7 @@ export function RightSideBar() {
         display: "flex",
         flexDirection: "column",
         bg: "#B5B5B5",
-        p: "2rem",
+        p: "2",
         color: "#222",
         w: "20em",
       })}
