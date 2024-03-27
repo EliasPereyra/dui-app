@@ -91,6 +91,11 @@ export function RightSideBar() {
           <label>100%</label>
         </div>
       </div>
+
+      <div className={stack({ mt: "4", direction: "column", gap: "2" })}>
+        <h3>Export</h3>
+        <button>Export to PDF</button>
+      </div>
     </aside>
   );
 }
