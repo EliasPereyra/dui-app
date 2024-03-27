@@ -1,10 +1,13 @@
+import { fontFamilyOptions, fontSizeOptions } from "@/constants/constants";
 import { css } from "../../styled-system/css";
-import { stack } from "../../styled-system/patterns";
+import { hstack, stack } from "../../styled-system/patterns";
+import { select } from "./recipes";
 
 const frameProportions = css({
   display: "flex",
   flexDirection: "column",
   gap: "1rem",
+  mt: "5",
 });
 
 export function RightSideBar() {
@@ -28,9 +31,45 @@ export function RightSideBar() {
 
         <div className={frameProportions}>
           <div className={css({ display: "flex", gap: "1rem" })}>
-            <strong>w</strong>
+            <strong>W</strong>
             <p>1270</p>
           </div>
+          <div className={css({ display: "flex", gap: "1rem" })}>
+            <strong>H</strong>
+            <p>1000</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={stack({
+          direction: "column",
+          mt: "5",
+        })}
+      >
+        <h3>Text</h3>
+        <select className={select()}>
+          {fontFamilyOptions.map((fontFamily) => (
+            <option key={fontFamily.value} value={fontFamily.value}>
+              {fontFamily.name}
+            </option>
+          ))}
+        </select>
+        <div
+          className={hstack({
+            gap: "10",
+          })}
+        >
+          <select className={select()}>
+            {fontSizeOptions.map((fontSize) => (
+              <option key={fontSize.value} value={fontSize.value}>
+                {fontSize.label}
+              </option>
+            ))}
+          </select>
+          <select className={select()}>
+            <option>Normal</option>
+          </select>
         </div>
       </div>
     </aside>
