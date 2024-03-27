@@ -82,6 +82,15 @@ export function RightSideBar() {
           <label>100%</label>
         </div>
       </div>
+
+      <div className={stack({ mt: "4", direction: "column", gap: "2" })}>
+        <h3>Stroke</h3>
+        <div className={hstack({ gap: "2" })}>
+          <input className={input()} type="color" />
+          <label>#222</label>
+          <label>100%</label>
+        </div>
+      </div>
     </aside>
   );
 }
