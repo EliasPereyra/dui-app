@@ -1,7 +1,8 @@
-import { fontFamilyOptions, fontSizeOptions } from "@/constants/constants";
 import { css } from "../../styled-system/css";
-import { hstack, stack } from "../../styled-system/patterns";
-import { select } from "./recipes";
+import { hstack, stack, vstack } from "../../styled-system/patterns";
+
+import { input, select } from "./recipes";
+import { fontFamilyOptions, fontSizeOptions } from "@/constants/constants";
 
 const frameProportions = css({
   display: "flex",
@@ -70,6 +71,15 @@ export function RightSideBar() {
           <select className={select()}>
             <option>Normal</option>
           </select>
+        </div>
+      </div>
+
+      <div className={stack({ mt: "4", direction: "column", gap: "2" })}>
+        <h3>Color</h3>
+        <div className={hstack({ gap: "2" })}>
+          <input className={input()} type="color" />
+          <label>#222</label>
+          <label>100%</label>
         </div>
       </div>
     </aside>
