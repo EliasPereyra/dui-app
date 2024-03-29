@@ -7,3 +7,10 @@ export const select = cva({
     p: "2",
   },
 });
+
+export const input = cva({
+  base: {
+    border: "none",
+    borderRadius: "4",
+  },
+});
