@@ -14,3 +14,13 @@ export const input = cva({
     borderRadius: "4",
   },
 });
+
+export const theme = {
+  tokens: {
+    fontSizes: {
+      sm: { value: ".7rem" },
+      md: { value: "1.2rem" },
+      lg: { value: "1.5rem" },
+    },
+  },
+};
