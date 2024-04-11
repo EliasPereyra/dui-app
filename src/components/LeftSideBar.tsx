@@ -11,7 +11,7 @@ const styles = css({
 export function LeftSideBar() {
   return (
     <aside className={styles}>
-      <h3>Layers</h3>
+      <h3 className={css({ textStyle: "h3" })}>Layers</h3>
     </aside>
   );
 }
